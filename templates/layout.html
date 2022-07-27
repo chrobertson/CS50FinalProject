@@ -20,12 +20,41 @@
 
     <body>
 
-        <nav>
-            
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid">
+
+                <!-- brand -->
+                <a class="navbar-brand" href="#">DnD Planner</a>
+
+                <!-- navbar collapse functionality -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar main -->
+                <div class="collapse navbar-collapse" id="navbar-main">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                        <!-- Register -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Register</a>
+                        </li>
+                        
+                        <!-- Login -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
         
-        <main>
+        <main class="container">
+
             {% block main %}{% endblock %}
+            
         </main>
 
     </body>
