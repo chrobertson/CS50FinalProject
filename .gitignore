@@ -3,3 +3,6 @@ __pycache__
 
 # ignore test.py
 test.py
+
+# ignore gitignore
+.gitignore
